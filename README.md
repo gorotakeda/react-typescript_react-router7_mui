@@ -1,1 +1,12 @@
-# react-typescript_react-router7_mui
+# React TypeScript + React Router 7 + Material UI プロジェクト
+
+このプロジェクトは、最新の技術スタックを使用して構築されたReactアプリケーションです。
+
+## 🚀 技術スタック
+
+### コア技術
+- **React 19.0.0** - 最新のReactバージョンで、新しい機能と改善されたパフォーマンスを提供
+- **React Router 7.1.5** - 最新のルーティングライブラリで、宣言的なナビゲーションを実現
+- **Material UI v6** - Googleのマテリアルデザインに基づいた美しいUIコンポーネント
+- **TypeScript** - 型安全性による開発体験の向上とバグの早期発見
+- **Vite** - 高速なビルドツールとホットリロードによる開発効率の向上
