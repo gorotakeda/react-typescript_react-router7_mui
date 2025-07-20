@@ -1,16 +1,16 @@
-import React from 'react'
-import { Outlet, Link } from 'react-router'
-import { 
-  AppBar, 
-  Toolbar, 
-  Typography, 
+import React from "react";
+import { Outlet, Link } from "react-router";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
   Button,
   Box,
   ThemeProvider,
-  CssBaseline
-} from '@mui/material'
-import { Home, Info, Phone } from '@mui/icons-material'
-import { theme } from '../../themes/theme'
+  CssBaseline,
+} from "@mui/material";
+import { Home, Info, Phone } from "@mui/icons-material";
+import { theme } from "../../themes/theme";
 
 // レイアウトコンポーネント
 export const RootLayout: React.FC = () => {
@@ -25,18 +25,28 @@ export const RootLayout: React.FC = () => {
           <Button color="inherit" component={Link} to="/" startIcon={<Home />}>
             ホーム
           </Button>
-          <Button color="inherit" component={Link} to="/about" startIcon={<Info />}>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/about"
+            startIcon={<Info />}
+          >
             アバウト
           </Button>
-          <Button color="inherit" component={Link} to="/contact" startIcon={<Phone />}>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/contact"
+            startIcon={<Phone />}
+          >
             連絡先
           </Button>
         </Toolbar>
       </AppBar>
-      
-      <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', py: 2 }}>
+
+      <Box sx={{ minHeight: "100vh", bgcolor: "background.default", py: 2 }}>
         <Outlet />
       </Box>
     </ThemeProvider>
-  )
-} 
+  );
+};

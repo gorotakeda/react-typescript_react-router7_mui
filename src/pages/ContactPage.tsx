@@ -1,26 +1,20 @@
-import { 
-  Typography, 
-  Button,
-  TextField,
-  Stack,
-  Box
-} from '@mui/material'
-import { useState } from 'react'
-import { CardLayout } from '../components/layout/CardLayout'
+import { Typography, Button, TextField, Stack, Box } from "@mui/material";
+import { useState } from "react";
+import { CardLayout } from "../components/layout/CardLayout";
 
 export const ContactPage = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const hundleClick = () => {
-    alert(`${name} ${email} ${message}`)
-    setName('')
-    setEmail('')
-    setMessage('')
-  }
+    alert(`${name} ${email} ${message}`);
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
-    return (
+  return (
     <CardLayout>
       <Typography variant="h3" component="h1" gutterBottom color="primary">
         連絡先
@@ -37,20 +31,20 @@ export const ContactPage = () => {
           開発環境: React 19 + React Router 7 + Material UI + TypeScript + Vite
         </Typography>
       </Box>
-      <Stack 
-        direction="column" 
+      <Stack
+        direction="column"
         spacing={2}
-        sx={{ 
-          maxWidth: 400, 
-          mx: 'auto',
+        sx={{
+          maxWidth: 400,
+          mx: "auto",
           px: 2,
-          py: 3
+          py: 3,
         }}
       >
         <TextField
           label="お名前"
           variant="outlined"
-          margin="normal" 
+          margin="normal"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -73,5 +67,5 @@ export const ContactPage = () => {
         </Button>
       </Stack>
     </CardLayout>
-  )
-}
+  );
+};

@@ -1,12 +1,8 @@
 // ホームページコンポーネント
-import React from 'react'
-import { 
-  Typography, 
-  Chip, 
-  Stack 
-} from '@mui/material'
-import { Code, Router, Build } from '@mui/icons-material'
-import { CardLayout } from '../components/layout/CardLayout'
+import React from "react";
+import { Typography, Chip, Stack } from "@mui/material";
+import { Code, Router, Build } from "@mui/icons-material";
+import { CardLayout } from "../components/layout/CardLayout";
 
 export const HomePage: React.FC = () => (
   <CardLayout>
@@ -18,7 +14,8 @@ export const HomePage: React.FC = () => (
     </Typography>
     <Typography variant="body1" paragraph>
       このアプリケーションは最新の技術スタックを使用して構築されています。
-      各ページを探索して、React Router v7とMaterial UIの組み合わせをご確認ください。
+      各ページを探索して、React Router v7とMaterial
+      UIの組み合わせをご確認ください。
     </Typography>
     <Stack direction="row" spacing={2} flexWrap="wrap" mt={2}>
       <Chip icon={<Code />} label="React 19" color="primary" />
@@ -26,4 +23,4 @@ export const HomePage: React.FC = () => (
       <Chip icon={<Build />} label="Material UI" color="success" />
     </Stack>
   </CardLayout>
-)
+);
